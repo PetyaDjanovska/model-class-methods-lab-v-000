@@ -21,8 +21,4 @@ class Captain < ActiveRecord::Base
     self.where.not("id IN (?)", self.sailors.pluck(:id))
   end
 
-
-
-
-
 end
